@@ -11,7 +11,7 @@ _explode = {
  if (_vest  == true) then {
 	"Bo_GBU12_LGB_MI10" createVehicle getPos player;
 
-	player setdammage 1;
+	player setDamage 1;
 	};
 };
 
