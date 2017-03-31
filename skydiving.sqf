@@ -15,5 +15,6 @@ parachute = {
   player addBackpack "B_Parachute";
   waituntil {isTouchingGround _unit};
   player addBackpack _backpack;
+  player addBackpackCargo _backpackcargo;
 };
 
