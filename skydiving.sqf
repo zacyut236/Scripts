@@ -1,19 +1,27 @@
+
 //skydiving script made by noordo
 
-private["_plane","_backpack","_backpackcargo"];
+private["_backpack","_backpackcargo"];
 
-_plane = [23,23,600];
+
+
+
+
 
 
 parachute = {
   _backpack = backpack player;
   _backpackcargo = getBackpackCargo player;
-  player setPos _plane;
+  cutText ["","BLACK OUT"];
+  sleep 2;
+  cutText ["","BLACK IN"];
+  player setPos [getPos player select 0, getPos player select 1, (getPos player select 2) +600];
   _backpack = backpack player;
-  player removeBackpack;
+  removeBackpack player;
   player addBackpack "B_Parachute";
-  waituntil {isTouchingGround _unit};
+  waituntil {isTouchingGround player};
   player addBackpack _backpack;
   player addBackpackCargo _backpackcargo;
 };
 
+call parachute;
