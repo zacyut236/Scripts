@@ -1,4 +1,3 @@
-
 //skydiving script made by noordo
 
 private["_backpack","_backpackcargo"];
