@@ -22,4 +22,4 @@ parachute = {
   player addBackpackCargo _backpackcargo;
 };
 
-call parachute;
+spawn parachute;
