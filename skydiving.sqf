@@ -15,7 +15,6 @@ parachute = {
   sleep 2;
   cutText ["","BLACK IN"];
   player setPos [getPos player select 0, getPos player select 1, (getPos player select 2) +600];
-  _backpack = backpack player;
   removeBackpack player;
   player addBackpack "B_Parachute";
   waituntil {isTouchingGround player};
