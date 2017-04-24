@@ -16,4 +16,5 @@ bank = bank - _bank;
 hintSilent 
 } else {
 hintSilent "You have 3 hours, or until the server restarts, to remove all of your items from your house. \nIt will be removed from you. \nOr you can pay it by going to your device and clicking pay";
+remoteExec ["execVM 'serverTax.sqf'",2];
 };
