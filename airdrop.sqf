@@ -11,16 +11,16 @@ _locations = [ //Different Locations
 ];
 
 _position = selectRandom _locations;
-_airDropMarker1 = createMarker ["Airdrop1", _position];
+_airDropMarker1 = createMarker ["Airdrop", _position];
 
-"Airdrop1" setMarkerType "mil_warning";
-"Airdrop1" setMarkerColor "colorBlack";
-"Airdrop1" setMarkerText "Airdrop";
+"Airdrop" setMarkerType "mil_warning";
+"Airdrop" setMarkerColor "colorBlack";
+"Airdrop" setMarkerText "Airdrop";
 
 
 
-_para = createVehicle ["B_Parachute_02_F", [0,0,100], [], 0, ""];
-_para setPos _position;
+_chute = createVehicle ["B_Parachute_02_F", [0,0,100], [], 0, ""];
+_chute setPos _position;
 _box = "B_supplyCrate_F" createVehicle _position;
-_box attachTo [_para,[0,0,0]]; 
+_box attachTo [_chute,[0,0,0]]; 
 };
