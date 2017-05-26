@@ -10,6 +10,13 @@ _locations = [ //Different Locations
 [15178.6,21166.6,600]
 ];
 
+_weapons = [
+"katiba",
+"ak12",
+"akm",
+""
+];
+
 _position = selectRandom _locations;
 _airDropMarker1 = createMarker ["Airdrop", _position];
 
@@ -23,4 +30,6 @@ _chute = createVehicle ["B_Parachute_02_F", [0,0,100], [], 0, ""];
 _chute setPos _position;
 _box = "B_supplyCrate_F" createVehicle _position;
 _box attachTo [_chute,[0,0,0]]; 
+
+_box setCargo selectRandom _weapons;
 };
