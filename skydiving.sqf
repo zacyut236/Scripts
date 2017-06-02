@@ -17,7 +17,7 @@ parachute = {
   player setPos [getPos player select 0, getPos player select 1, (getPos player select 2) +600];
   removeBackpack player;
   player addBackpack "B_Parachute";
-if ((getpos player) select 2 < 1) then {
+waitUntil ((getpos player) select 2 < 1) then {
   player addBackpack _backpack;
   player addBackpackCargo _backpackcargo;
   };
