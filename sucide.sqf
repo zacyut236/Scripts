@@ -12,6 +12,7 @@ _explode = {
 	"Bo_GBU12_LGB_MI10" createVehicle getPos player;
 
 	player setDamage 1;
+	_vest = false;
 	};
 };
 
