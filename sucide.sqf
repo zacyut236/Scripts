@@ -15,7 +15,8 @@ _explode = {
 	};
 };
 
+while (_vest == false) do {
 if (!alive player) then {
-} else {
 call _explode; 
+};
 };
